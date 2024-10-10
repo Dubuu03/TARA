@@ -1,0 +1,319 @@
+@font-face {
+  font-family: "qqq";
+  src: url(font/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family: www;
+  src: url(font/BebasNeue-Regular.otf);
+}
+
+@font-face {
+  font-family: eee;
+  src: url(font/Gobold\ Regular.otf);
+}
+
+@font-face {
+  font-family: aaa;
+  src: url(font/Louis\ George\ Cafe.ttf);
+}
+
+.food-hero {
+  height: calc(100vh - 60px);
+  background-image: url("./public/sisig1.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.food-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  flex: 1;
+  max-width: 1000px;
+  margin-top: 15rem;
+}
+
+.food-info-container h1 {
+  font-family: "Impact", serif;
+  font-size: clamp(40px, 10vw, 100px);
+  font-weight: 50;
+  letter-spacing: 22px;
+  text-align: center;
+}
+
+.food-info-container p {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 30px;
+}
+
+@media (max-width: 600px) {
+  .food-info-container p {
+    font-size: 15px;
+  }
+}
+
+/* Ingredients Section */
+
+.Ingredients {
+  min-height: 700px;
+  background-color: #446688;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ingredients {
+  margin-left: 20vw;
+  z-index: 10;
+  max-width: 680px;
+}
+
+.ingredients h3 {
+  color: white;
+  letter-spacing: 5px;
+  font-family: eee;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+}
+
+.ingredients ul {
+  list-style: circle;
+}
+
+.ingredients ul li {
+  color: white;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-weight: bold;
+  list-style: disc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.food-circle {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  right: 100px;
+}
+
+.food-img {
+  width: 500px;
+  height: 500px;
+  object-position: center;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 50%;
+  padding-left: 16px;
+  transition: transform 0.3s ease;
+}
+
+.food-img:hover {
+  transform: scale(1.05);
+}
+
+#curve {
+  fill: transparent;
+}
+
+.curved-text {
+  margin-bottom: -2rem;
+  transform: scale(1.8);
+}
+
+.text {
+  font-size: 2.5rem;
+  fill: white;
+  font-family: www;
+  word-spacing: 1rem;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.lower {
+  position: relative;
+  min-height: 900px;
+  padding-inline: clamp(10px, 10vw, 200px);
+  padding-block: 5rem;
+  overflow: hidden;
+}
+
+.Instruction {
+  min-height: 600px;
+  position: relative;
+}
+
+.instructions {
+  max-width: 700px;
+  margin-bottom: 100px;
+  z-index: 100;
+}
+
+.instructions h3 {
+  color: #446688;
+  letter-spacing: 5px;
+  font-family: eee;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 35px;
+}
+
+.instructions ol {
+  color: #446688;
+}
+
+.instructions ol li {
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-weight: lighter;
+  list-style: decimal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Images */
+.spoon {
+  top: 40%;
+  left: -200px;
+  transform: rotate(40deg);
+  height: 600px;
+  width: 20vw;
+  position: absolute;
+}
+
+.leaf {
+  top: 50px;
+  position: absolute;
+  left: 60%;
+  width: 300px;
+  height: 300px;
+}
+
+.dahon {
+  position: absolute;
+  top: 70px;
+  right: 10%;
+  height: 90px;
+  width: 100px;
+}
+
+.dahon1 {
+  position: absolute;
+  top: 40px;
+  transform: rotate(-90deg);
+  height: 50px;
+  width: 60px;
+}
+
+.dahon2 {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  transform: rotate(45deg);
+  height: 40px;
+  width: 50px;
+}
+
+.dahon3 {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  transform: rotate(-180deg);
+  height: 30px;
+  width: 40px;
+}
+
+.uncook {
+  position: absolute;
+  top: 34%;
+  right: 250px;
+  left: 0;
+  z-index: 1;
+}
+
+.uncook img {
+  transform: rotate(90deg);
+  width: 500px;
+}
+
+@media (max-width: 1600px) {
+  .Ingredients {
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding-block: 3rem;
+    padding-inline: 20px;
+  }
+
+  .ingredients {
+    margin-left: 0px;
+  }
+
+  .food-circle {
+    position: unset;
+    top: 0;
+    right: 0;
+    z-index: 20;
+  }
+
+  .spoon {
+    display: none;
+  }
+
+  .leaf {
+    left: 80%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .leaf {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .food-circle {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 520px) {
+  .uncook {
+    display: none;
+  }
+}
+
+.card-title {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #064358;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  border-radius: 12px !important;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn.changecol:hover {
+  background-color: rgb(1, 143, 1) !important;
+  color: white !important;
+}

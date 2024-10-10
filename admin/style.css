@@ -1,0 +1,25 @@
+.password-cell {
+   max-width: 200px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: block;
+}
+
+.user-image {
+   width: 50px;
+   height: 50px;
+   margin-inline: auto;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 9999px;
+}
+
+.logo {
+   height: 60px;
+}
+      
+.gap {
+   padding: 0 40px 0 20px;
+}
+
