@@ -1,0 +1,373 @@
+h2 {
+  color: #446688;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("./public/tubabg.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f5f5f5;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .discover {
+  font-family: "Arial", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.hero .tara-your {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  color: white;
+  line-height: 30px;
+  padding: 0px 15% 0px 15%;
+}
+
+.hero .philippines {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(30px, 10vw, 100px);
+  letter-spacing: 15px;
+  color: white;
+}
+
+@media (max-width: 537px) {
+  .hero .discover {
+    font-size: 15px;
+  }
+
+  .hero .tara-your {
+    font-size: 12px;
+  }
+}
+
+.t-title {
+  padding: 150px 30px 20px 115px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #446688;
+}
+
+.t-text {
+  font-family: "Arial", sans-serif;
+  font-size: 23px;
+  margin-bottom: 20px;
+  color: black;
+  line-height: 30px;
+  padding: 0px 30% 0px 15%;
+  color: #446688;
+}
+
+.e-title {
+  padding: 150px 115px 20px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: right;
+  color: #446688;
+}
+
+.e-text {
+  font-family: "Arial", sans-serif;
+  font-size: 23px;
+  margin-bottom: 20px;
+  color: black;
+  line-height: 30px;
+  padding: 0px 15% 0px 30%;
+  text-align: right;
+  color: #446688;
+}
+
+.f-title {
+  padding: 50px 30px 20px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.f-text {
+  font-family: "Arial", sans-serif;
+  font-size: 23px;
+  color: black;
+  line-height: 30px;
+  padding: 0px 15% 6% 15%;
+  text-align: center;
+  margin-bottom: 0;
+  color: whitesmoke;
+}
+
+.f-bg {
+  padding-block: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #446688;
+}
+
+.two-row-section {
+  justify-content: space-between;
+  width: 100%;
+  height: 92vh;
+}
+
+/* Style for the two-column section */
+.two-column-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 95vh;
+}
+
+@media (max-width: 751px) {
+  .two-column-section {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .column p {
+    padding-bottom: 4rem;
+  }
+}
+
+/* Style for each column */
+.column {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Style for the image column */
+.column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero .rectangle-parent10 {
+  margin-top: 20px;
+}
+
+.hero .group-child9 {
+  background-color: #4caf50;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+}
+
+.hero .explore {
+  color: #fff;
+  font-size: 18px;
+}
+
+.hero .clouds img {
+  position: absolute;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card.location {
+  border-radius: 4%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+@media (max-width: 1028px) {
+  .image-container {
+    flex-direction: column;
+  }
+
+  .f-bg {
+    flex-direction: column-reverse;
+  }
+
+  .tara-your,
+  .text-container {
+    margin-bottom: 5rem;
+  }
+}
+
+/*  */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 4% !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust transparency as needed */
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-item:hover .overlay {
+  opacity: 1;
+}
+
+/*  */
+
+.card-img:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.card-text {
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-destinations,
+.popular-destinations {
+  margin-bottom: 50px;
+}
+
+.top-destinations .title,
+.popular-destinations .header {
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.group-parent,
+.group-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+i.top {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.destination {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.destination-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.description,
+.name,
+.button {
+  margin: 10px 0;
+}
+
+.button .text {
+  color: #fff;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Button */
+btn-primary {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-body-2col {
+  column-count: 2;
+  column-gap: 20px;
+  padding-top: 5px;
+}
+
+.custom-footer {
+  padding: 0.5rem 1rem;
+  background-color: #064358;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
+
+.custom-footer a.btn {
+  color: #fff;
+  font-size: 14px;
+}
+
+.card-titles {
+  font-size: 18px;
+  color: #064358;
+  padding: 0rem 1rem;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #064358;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 12px !important;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn.changecol:hover {
+  background-color: rgb(1, 143, 1) !important;
+  color: white !important;
+}

@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-clr: rgb(2, 46, 59);
+  --secondary-clr: rgb(0, 206, 209);
+  --shadow-clr: rgba(0, 0, 0, 0.2);
+  --button-clr: rgba(13, 110, 253, 1);
+}
+
+button {
+  cursor: pointer;
+  border-style: none;
+  background-color: transparent;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.profile-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 99999px;
+}
+
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info-fullName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-email {
+  color: grey;
+}
+
+.bookings-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+.booking-count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-count-container .booking-label {
+  padding-inline: 8px;
+  text-align: center;
+}
+
+.booking-label:nth-of-type(2) {
+  border-left: 1px solid grey;
+  background-color: aqua;
+}
+
+.custom-btn {
+  background-color: var(--button-clr);
+  padding: 8px 12px;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  max-width: min-content;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+.custom-btn:hover {
+  background-color: #0069d9;
+}
+/* Styling for footer */
+footer {
+  background-color: var(--primary-clr);
+}
+
+.footer-container {
+  display: flex;
+  align-items: start;
+  padding: 4rem 6vw;
+  color: white;
+  gap: 1.5rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+}
+
+.footer-container img[alt="footer-logo"] {
+  height: 150px;
+}
+
+.footer-title {
+  margin-bottom: 1rem;
+  color: var(--secondary-clr);
+}
+
+.footer-column .footer-links {
+  padding: 0;
+}
+/*  */
+.footer-column .footer-links a {
+  text-decoration: none;
+}
+.footer-column .footer-links a:hover {
+  text-decoration: underline !important;
+}
+.footer-column .footer-social a {
+  text-decoration: none;
+}
+.footer-column .footer-social a:hover span {
+  text-decoration: underline !important;
+}
+/* */
+
+.footer-column .footer-links a {
+  color: white;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.footer-column .footer-contact {
+  margin-bottom: 0.5rem;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.2rem;
+}
+.footer-social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-social-icon {
+  width: 25px;
+}
+
+.scroll-top-btn {
+  background-color: var(--secondary-clr);
+  display: none;
+  color: white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 20;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-top-btn:hover {
+  transform: scale(1.2);
+}
+
+.scroll-top-btn:active {
+  transform: scale(0.8);
+}
+
+@media (max-width: 980px) {
+  .footer-container {
+    flex-direction: column;
+    display: flex;
+  }
+}

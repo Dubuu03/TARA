@@ -1,0 +1,118 @@
+        <!-- Main Content -->
+        <main>
+            <!-- Top Destinations Section -->
+            <section class="top-destinations">
+                <h2 class="title"><i class="top">TOP</i> <span class="destinations">DESTINATIONS</span></h2>
+                <div class="group-parent">
+                    <!-- Destination 1 -->
+                    <div class="card destination bg-primary" style="border-radius: 30px 0 30px 0;">
+                        <img class="card-img-top destination-img" src="./public/rectangle-4@2x.png" alt="Siargao"
+                            style="width: 200px; height: auto; padding: 20px;">
+                        <div class="card-body" style="padding: 20px;">
+                            <p class="card-text"><b>Siargao is a stunning Philippine island known for its pristine
+                                    beaches, crystal-clear
+                                    waters, world-class surfing, and laid-back atmosphere.</b></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="name">
+                                <b>Siargao</b>
+                                <img class="location-icon" alt="">
+                            </div>
+                            <div class="button">
+                                <b class="text">Read More</b>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Destination 2 -->
+                    <div class="destination">
+                        <img class="destination-img" alt="Bohol" src="./public/rectangle-43@2x.png" />
+                        <div class="description">
+                            <b>Bohol, Philippines: lush landscapes, Chocolate Hills, vibrant coral reefs, Tarsier
+                                Sanctuary, cultural heritage, and pristine beaches.</b>
+                        </div>
+                        <div class="name">
+                            <b>Bohol</b>
+                            <img class="location-icon" alt="" />
+                        </div>
+                        <div class="button">
+                            <b class="text">Read More</b>
+                        </div>
+                    </div>
+
+                    <!-- Destination 3 -->
+                    <div class="destination">
+                        <img class="destination-img" alt="Palawan" src="./public/rectangle-42@2x.png" />
+                        <div class="description">
+                            <b>Palawan: Philippines' tropical gem with pristine beaches, turquoise waters, limestone
+                                cliffs, rich marine life, and stunning landscapes.</b>
+                        </div>
+                        <div class="name">
+                            <b>Palawan</b>
+                            <img class="location-icon" alt="" />
+                        </div>
+                        <div class="button">
+                            <b class="text">Read More</b>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Destinations Section -->
+            <section class="popular-destinations">
+                <div class="header">
+                    <i class="popular">POPULAR</i>
+                    <span class="destinations">DESTINATIONS</span>
+                </div>
+                <div class="group-container">
+                    <!-- Destination 4 -->
+                    <div class="destination">
+                        <img class="destination-img" alt="Boracay" src="./public/rectangle-4@2x.png" />
+                        <div class="description">
+                            <b>Boracay: Philippines' paradise island with powdery white sands, vibrant nightlife, and
+                                water activities for all.</b>
+                        </div>
+                        <div class="name">
+                            <b>Boracay</b>
+                            <img class="location-icon" alt="" />
+                        </div>
+                        <div class="button">
+                            <b class="text">Read More</b>
+                        </div>
+                    </div>
+
+                    <!-- Destination 5 -->
+                    <div class="destination">
+                        <img class="destination-img" alt="El Nido" src="./public/rectangle-43@2x.png" />
+                        <div class="description">
+                            <b>El Nido: Palawan's gem with stunning limestone cliffs, hidden lagoons, turquoise waters,
+                                and vibrant marine life.</b>
+                        </div>
+                        <div class="name">
+                            <b>El Nido</b>
+                            <img class="location-icon" alt="" />
+                        </div>
+                        <div class="button">
+                            <b class="text">Read More</b>
+                        </div>
+                    </div>
+
+                    <!-- Destination 6 -->
+                    <div class="destination">
+                        <img class="destination-img" alt="Cebu" src="./public/rectangle-42@2x.png" />
+                        <div class="description">
+                            <b>Cebu: Philippines' vibrant island with rich history, pristine beaches, stunning
+                                waterfalls, and vibrant city life.</b>
+                        </div>
+                        <div class="name">
+                            <b>Cebu</b>
+                            <img class="location-icon" alt="" />
+                        </div>
+                        <div class="button">
+                            <b class="text">Read More</b>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
