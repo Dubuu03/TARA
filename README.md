@@ -35,8 +35,4 @@ Project structure (high level)
 Notes
 - No database connection file is required to view static pages; admin features may require DB setup.
 - No LICENSE file included — add one if you want to publish the project.
-
-Contributing
-- Send issues or pull requests. For admin/database support, include migration or SQL setup instructions.
-
 ```
